@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha374-J6qa4749blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha374-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha374-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod7GCExl3Og7ifwB6" crossorigin="anonymous"></script>
+
+<head>
+  <meta charset="UTF-7">
+  <title>City Latitude versus Max Temperature</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">WeatherPy</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="tempmap.html">Max Temperature</a>
+          <a class="dropdown-item" href="humiditymap.html">Humidity</a>
+          <a class="dropdown-item" href="cloudymap.html">Cloudiness</a>
+          <a class="dropdown-item" href="windmap.html">Wind Speed</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="comp.html">Comparison <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="data.html">Data</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</br>
+</br>
+    <main>
+    <div class="container-lg">
+
+          <div class="row">
+            <div class="col-md-7">
+              <header class="header">
+              <h1>City Latitude versus Max Temperature</h1>
+              </header>
+              <hr>
+                            <div class="nav justify-content-center">
+               <a href="assets/images/tempmap.png">
+              <img target="_blank" src="assets/images/tempmap.png" height="400" alt="Tempurature Map"></a>
+               <p> There is a strong correlation between the distance from the equator and the max temperature. This correlation is stronger in the Northern Hemisphere althought this is likely due to a greater number (and better distributed cities) in the Northern Hemisphere versus the Southern Hemisphere.</p>
+               <p>The purpose of this project was to analyze how weather changes as you move further away from the equator. You can learn more about the details behind this project at the <a href="index.html">home page</a></p>
+               <br>
+               <br>
+            </div>
+          </div>
+
+            <div class="col-md-1">
+            </div>
+
+              <div class="col-md-4">
+
+              <header class="header">
+              <h1>Visualizations</h1>
+              <br>
+              </header>
+              <hr>
+                            <div class="nav justify-content-center">
+              <br>
+                <a target="_self" href="cloudymap.html">
+                <img src="assets/images/cloudymap.png" height="100" alt="Cloudy Map"></a>
+
+                <a target="_self" href="humiditymap.html">
+                <img src="assets/images/humiditymap.png" height="100" alt="Humidity Map"></a>
+
+                <span class="border border-primary"><a target="_self" href="tempmap.html">
+                <img target="_blank" src="assets/images/tempmap.png" height="100" alt="Tempurature Map"></a></span>
+                
+                <a target="_self" href="windmap.html">
+                <img src="assets/images/windmap.png" height="100" alt="Wind Map"></a>
+              </div>
+            </div>
+
+            </div>
+            <div class="row">
+            <div class="col-md-6">
+           
+          </div>
+        </div>
+          <div class="row">
+          <div class="col-md-6">
+            
+          </div>
+          </div>
+    </div>
+       
+ 
+            </div>
+          </div>
+        </div>
+       
+</main>
+</body>
+</html>
